@@ -14,9 +14,25 @@ const raisinAlarm = function (cookie) {
   for (let i = 0; i < cookie.length; i++) {
     if (cookie[i] === "🍇") {
       alert = "Raisin alert!";
+      return alert;
+    }
+  }
+};
+/*
+const raisinAlarm = function (cookie) {
+  let alert = '';
+  for (let i = 0; i < cookie.length; i++) {
+    if (cookie[i] === "🍇") {
+      alert = "Raisin alert!";
+    }else{
+      alert = "All Good";
     }
   }
   return alert;
 };
 
-console.log(raisinAlarm(["🍫", "🍫", "🍇", "🍫"]));
+
+
+
+*/
+console.log(raisinAlarm(["🍫", "🍇", "🍫", "🍫"]));
