@@ -20,11 +20,15 @@ const without = function (source, itemsToRemove) {
   return newArr;
 };
 
+//newarr = [1, 2, 3]
+//0 =>items to remove.index of [0]---this is true
+//the rest r falsey so it gets filtered
 
 
 console.log(without([1, 2, 3], [1]));
 console.log(without(["1", "2", "3"], [1, 2, "3"]));
-// console.log(assertArraysEqual([1, 2, 3], [1, 2, 3])); // => true
+console.log(assertArraysEqual([1, 2, 3], [1, 2, 3])); // => true
 const words = ["hello", "world", "lighthouse"];
 console.log(without(words, ["lighthouse"])); // no need to capture return value for this test case
-// Make sure the original array was not altered by the without functionconsole.log(assertArraysEqual(words, ["hello", "world", "lighthouse"]));
+// Make sure the original array was not altered by the without function
+console.log(assertArraysEqual(words, ["hello", "world", "lighthouse"]));

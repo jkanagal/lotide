@@ -13,15 +13,14 @@ const assertArraysEqual = function (array1, array2) {
   return (eqArrays(array1, array2)) ? `Assertion Pass: ${check} ` : `Assertion failed: ${wrong}`;
 };
 
-const flatten = function (array1) {
-  let newArray = [];
-  for (let i = 0; i < array1.length; i++) {
-    if (Array.isArray(array1[i])) {
-      newArray = newArray.concat(array1[[i]]);
-    } else {
-      newArray.push(array1[i]);
-    }
-  } return newArray;
+const middle = function(arr1){
+
 };
 
-console.log(flatten([1, 2, [3, 4], 5, [6]])); // => [1, 2, 3, 4, 5, 6])
+
+middle([1]); // => []
+middle([1, 2]);
+middle([1, 2, 3]); // => [2]
+middle([1, 2, 3, 4, 5]); // => [3]
+middle([1, 2, 3, 4]) // => [2, 3]
+middle([1, 2, 3, 4, 5, 6]) // => [3, 4]
