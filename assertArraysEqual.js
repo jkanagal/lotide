@@ -1,14 +1,14 @@
 
-// const eqArrays = function (arr1, arr2) {
-//   let ans;
-//   for (let i = 0; i < arr1.length; i++) {
-//     if (arr1[i] === arr2[i]) {
-//       ans = true;
-//     } else {
-//       return ans = false;
-//     }
-//   } return ans;
-// };
+const eqArrays = function (arr1, arr2) {
+  let ans;
+  for (let i = 0; i < arr1.length; i++) {
+    if (arr1[i] === arr2[i]) {
+      ans = true;
+    } else {
+      ans = false;
+    }
+  } return ans;
+};
 
 const eqArrays = function (arr1, arr2) {
   let ans = true;
