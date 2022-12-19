@@ -1,3 +1,5 @@
+
+
 const assertEqual = function (actual, expected) {
   const check = String.fromCodePoint(0x2705);
   const wrong = String.fromCodePoint(0x274C);
@@ -5,10 +7,4 @@ const assertEqual = function (actual, expected) {
 };
 
 
-
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
-assertEqual(1, 2);
-assertEqual("Bootcamp", "Bootcamp");
-eqArrays([1, 2, 3], [1, 2, 3]) // => true
-eqArrays([1, 2, 3], [3, 2, 1]) // => false
+module.exports = assertEqual;

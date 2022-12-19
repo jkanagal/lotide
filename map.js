@@ -17,12 +17,13 @@ const assertArraysEqual = function(array1,array2) {
 const map = function (array, callback) {
   const results = [];
   for (let item of array) {
-    results.push(callback.item);
+    results.push(callback(item));
   }
   return results;
 };
 
-const words = ["ground", "control", "to", "major", "tom"];
+const words = ["ground", "control", "to", "major", "totm"];
 
 const results1 = map(words, word => word[0]);
-console.log(assertArraysEqual());
+//console.log(assertArraysEqual([words],[results1]));
+console.log(results1);
