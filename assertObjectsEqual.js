@@ -9,10 +9,10 @@ const eqArrays = function (arr1, arr2) {
   } return ans;
 };
 
-const assertArraysEqual = function(array1,array2) {
+const assertArraysEqual = function (array1, array2) {
   const check = String.fromCodePoint(0x2705);
   const wrong = String.fromCodePoint(0x274C);
-  return (eqArrays(array1,array2)) ? `Assertion Pass: ${check} ` : `Assertion failed: ${wrong}`;
+  return (eqArrays(array1, array2)) ? `Assertion Pass: ${check} ` : `Assertion failed: ${wrong}`;
 };
 
 const eqObjects = function (object1, object2) {
@@ -29,11 +29,11 @@ const eqObjects = function (object1, object2) {
   }
 };
 
-const assertObjectsEqual = function(actual, expected) {
- // const inspect = require('util').inspect;
+const assertObjectsEqual = function (actual, expected) {
+  // const inspect = require('util').inspect;
   const check = String.fromCodePoint(0x2705);
   const wrong = String.fromCodePoint(0x274C);
-  return (eqObjects(actual,expected)) ? `Assertion Pass: ${check} ` : `Assertion failed: ${wrong}`;
+  return (eqObjects(actual, expected)) ? `Assertion Pass: ${check} ` : `Assertion failed: ${wrong}`;
 };
 
 const multiColorShirtObject = { colors: ["red", "blue"], size: "medium" };
